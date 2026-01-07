@@ -10,7 +10,7 @@ const projects = [
         technologies: ["Python", "TensorFlow", "ARIMA", "Streamlit", "Tableau"],
         icon: BarChart3,
         gradient: "from-accent to-coral-light",
-        github: "#",
+        github: "https://github.com/KashmiraLokhande/Retail-market-analysis",
         demo: "#",
     },
     {
@@ -20,7 +20,7 @@ const projects = [
         technologies: ["MongoDB", "Express", "Angular", "Node.js", "AWS"],
         icon: Camera,
         gradient: "from-primary to-navy-light",
-        github: "#",
+        github: "https://github.com/KashmiraLokhande/SocialMediaApp",
         demo: "#",
     },
 ];

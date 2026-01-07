@@ -233,7 +233,7 @@ export default function Contact() {
                                 asChild
                                 className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
                             >
-                                <a href="#" className="flex items-center gap-2">
+                                <a href="@/assets/Kashmira_Lokhande_resume.pdf" className="flex items-center gap-2">
                                     Download Resume
                                 </a>
                             </Button>
