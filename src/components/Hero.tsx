@@ -89,7 +89,7 @@ export default function Hero() {
                                 size="lg"
                                 asChild
                             >
-                                <a href="/KashmiraPortfolio/kashmira-lokhande-resume.pdf" className="flex items-center gap-2">
+                                <a href={resumePdf} className="flex items-center gap-2">
                                     <Download size={18} />
                                     Download CV
                                 </a>
