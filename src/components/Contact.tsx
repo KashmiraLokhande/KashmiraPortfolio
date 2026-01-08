@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import resumePdf from "@/assets/kashmira-lokhande-resume.pdf";
 
 const contactInfo = [
     {
@@ -233,7 +234,7 @@ export default function Contact() {
                                 asChild
                                 className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
                             >
-                                <a href="@/assets/Kashmira_Lokhande_resume.pdf" className="flex items-center gap-2">
+                                <a href={resumePdf} download className="flex items-center gap-2">
                                     Download Resume
                                 </a>
                             </Button>

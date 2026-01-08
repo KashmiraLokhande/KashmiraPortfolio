@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowDown, Download, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/kashmira-profile.jpg";
+import resumePdf from "@/assets/kashmira-lokhande-resume.pdf";
 
 export default function Hero() {
     const scrollToSection = (href: string) => {
@@ -88,7 +89,7 @@ export default function Hero() {
                                 size="lg"
                                 asChild
                             >
-                                <a href="@/assets/Kashmira_Lokhande_resume.pdf" className="flex items-center gap-2">
+                                <a href={resumePdf} className="flex items-center gap-2">
                                     <Download size={18} />
                                     Download CV
                                 </a>
