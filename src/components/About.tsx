@@ -18,34 +18,54 @@ const education = [
 
 const skillCategories = [
     {
-        title: "Programming",
-        skills: ["Python", "Java", "SQL", "Bash/Shell"],
+        title: "Programming Languages",
+        skills: ["Python", "JavaScript", "TypeScript", "Java", "SQL", "Bash/Shell"],
         color: "bg-accent",
     },
     {
-        title: "Web Development",
-        skills: ["HTML", "CSS", "JavaScript", "TypeScript", "Angular", "ReactJS", "Node.js", "Express", "PHP"],
+        title: "Backend & APIs",
+        skills: ["Django", "Flask", "Node.js", "Express", "REST APIs", "GraphQL", "gRPC", "Protobuf"],
         color: "bg-coral-light",
     },
     {
-        title: "Frameworks & Core",
-        skills: ["Django", "Flask", "REST API", "SOAP", "Microservices", "GraphQL"],
+        title: "Frontend Development",
+        skills: ["React", "Angular", "HTML", "CSS", "Bootstrap"],
         color: "bg-primary",
     },
     {
-        title: "DevOps & Cloud",
-        skills: ["Docker", "Kubernetes", "AWS", "Azure", "GCP", "Jenkins", "Terraform", "CI/CD"],
+        title: "Distributed Systems",
+        skills: ["Microservices", "Apache Kafka", "Event-Driven Architecture"],
         color: "bg-accent",
     },
     {
-        title: "Databases",
-        skills: ["MySQL", "PostgreSQL", "MongoDB", "NoSQL", "Redis"],
+        title: "Cloud & DevOps",
+        skills: ["AWS", "Amazon EKS", "Docker", "Kubernetes", "Jenkins", "Terraform", "CI/CD"],
+        color: "bg-coral-light",
+    },
+    {
+        title: "Observability",
+        skills: ["OpenTelemetry", "Grafana Tempo", "Sentry", "OpenSearch"],
+        color: "bg-primary",
+    },
+    {
+        title: "Databases & Caching",
+        skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
+        color: "bg-accent",
+    },
+    {
+        title: "Developer Tools",
+        skills: ["Git", "GitHub", "GitHub Copilot", "Claude Code"],
         color: "bg-coral-light",
     },
     {
         title: "Machine Learning",
         skills: ["TensorFlow", "PyTorch", "Scikit-learn", "NLP", "OCR", "OpenCV"],
-        color: "bg-primary",
+        color: "bg-coral-light",
+    },
+    {
+        title: "Agentic AI",
+        skills: ["LLM APIs", "Tool Calling", "LangChain", "LangGraph", "Retrieval-Augmented Generation (RAG)", "Model Context Protocol (MCP)", "Agent Workflows"],
+        color: "bg-coral-light",
     },
 ];
 

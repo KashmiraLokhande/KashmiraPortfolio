@@ -31,7 +31,7 @@ const contactInfo = [
     {
         icon: MapPin,
         label: "Location",
-        value: "Long Beach, CA, USA",
+        value: "Atlanta, GA, USA",
         href: "#",
     },
 ];

@@ -56,7 +56,7 @@ export default function Hero() {
                             transition={{ delay: 0.4 }}
                             className="text-xl md:text-2xl text-primary-foreground/80 mb-6"
                         >
-                            Full Stack Web Developer & Computer Science Specialist
+                            Software Engineer
                         </motion.p>
 
                         <motion.p
