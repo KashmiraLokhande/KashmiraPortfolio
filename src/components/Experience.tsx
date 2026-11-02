@@ -8,14 +8,14 @@ const experiences = [
         location: "USA",
         period: "Aug 2023 – Present",
         description: [
-            "Engineered scalable payroll applications serving 1,858 SMB clients.",
-            "Unified microservice communication with gRPC and versioned Protobuf contracts.",
-            "Cut incident resolution time by 35% through distributed tracing and monitoring.",
-            "Powered resilient, event-driven payroll workflows with Kafka.",
-            "Optimized data retrieval and reduced redundant requests with GraphQL APIs.",
-            "Orchestrated LLM and tool-calling workflows with Temporal, enabling durable execution, retries, and failure recovery.",
-            "Improved troubleshooting for microservices on Amazon EKS with centralized OpenSearch logging.",
-            "Accelerated testing and defect resolution with GitHub Copilot and Claude Code.",
+            "Engineered scalable payroll applications serving 1,858 SMB clients",
+            "Unified microservice communication with gRPC and versioned Protobuf contracts",
+            "Cut incident resolution time by 35% through distributed tracing and monitoring",
+            "Powered resilient, event-driven payroll workflows with Kafka",
+            "Optimized data retrieval and reduced redundant requests with GraphQL APIs",
+            "Orchestrated LLM and tool-calling workflows with Temporal, enabling durable execution, retries, and failure recovery",
+            "Improved troubleshooting for microservices on Amazon EKS with centralized OpenSearch logging",
+            "Accelerated testing and defect resolution with GitHub Copilot and Claude Code",
         ],
         technologies: ["Python", "Django", "React", "gRPC", "Protobuf", "GraphQL", "Kafka", "PostgreSQL", "Redis", "AWS EKS", "Docker", "Kubernetes", "OpenSearch", "OpenTelemetry", "Sentry", "Grafana Tempo", "GitHub Copilot", "Claude Code"],
     },
@@ -142,12 +142,11 @@ export default function Experience() {
                                             <span>{exp.location}</span>
                                         </div>
                                     </div>
-
-                                    <ul className={`mt-4 space-y-2 ${index % 2 === 0 ? "md:text-right" : ""}`}>
+                                    <ul className="mt-4 space-y-2 text-left">
                                         {exp.description.map((item, i) => (
                                             <li key={i} className="text-muted-foreground text-sm flex items-start gap-2">
-                                                <span className={`text-accent mt-1.5 ${index % 2 === 0 ? "md:order-last" : ""}`}>•</span>
-                                                {item}
+                                                <span className="text-accent shrink-0" aria-hidden="true">•</span>
+                                                <span>{item}</span>
                                             </li>
                                         ))}
                                     </ul>
