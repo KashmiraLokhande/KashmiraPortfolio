@@ -43,11 +43,6 @@ const skillCategories = [
         color: "bg-coral-light",
     },
     {
-        title: "Observability",
-        skills: ["OpenTelemetry", "Grafana Tempo", "Sentry", "OpenSearch"],
-        color: "bg-primary",
-    },
-    {
         title: "Databases & Caching",
         skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
         color: "bg-accent",
@@ -98,7 +93,7 @@ export default function About() {
                         className="lg:col-span-3"
                     >
                         <p className="text-lg md:text-xl font-medium text-foreground leading-relaxed mb-5">
-                            I like figuring out how things work—and making them work better.
+                            I like figuring out how things work and making them work better.
                         </p>
 
                         <div className="space-y-4 text-base text-muted-foreground leading-7 max-w-prose">
@@ -115,12 +110,11 @@ export default function About() {
                                 I enjoy the engineering behind the experience: designing APIs,
                                 connecting services with gRPC and Kafka, and following traces
                                 to uncover problems. My observability work helped reduce
-                                incident resolution time by{" "}
-                                <span className="font-semibold text-foreground">35%</span>.
+                                incident resolution time by 35%.
                             </p>
 
                             <p>
-                                I care about what happens after code ships—how it scales,
+                                I care about what happens after code ships, how it scales,
                                 how it recovers, and how easily another engineer can build
                                 on it. That’s what makes a good solution exciting to me.
                             </p>
