@@ -75,92 +75,98 @@ export default function About() {
             <div className="container mx-auto">
                 {/* Section Header */}
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-center mb-16"
+                    className="mb-10"
                 >
-                    <span className="text-accent font-semibold text-sm uppercase tracking-wider">
+                    <span className="text-accent font-semibold text-sm uppercase tracking-widest">
                         About Me
                     </span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2">
-                        Passionate Computer Scientist
+
+                    <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-3 tracking-tight">
+                        Curious Mind. Systems Thinker. Builder.
                     </h2>
                 </motion.div>
 
-                <div className="grid lg:grid-cols-2 gap-12 mb-16">
-                    {/* Bio */}
+                <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-start mb-12">
+                    {/* Biography */}
                     <motion.div
-                        initial={{ opacity: 0, x: -30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
+                        className="lg:col-span-3"
                     >
-                        <h3 className="text-2xl font-bold text-foreground mb-4">
-                            Who I Am
-                        </h3>
-                        <div className="space-y-4 text-muted-foreground leading-relaxed">
+                        <p className="text-lg md:text-xl font-medium text-foreground leading-relaxed mb-5">
+                            I like figuring out how things work—and making them work better.
+                        </p>
+
+                        <div className="space-y-4 text-base text-muted-foreground leading-7 max-w-prose">
                             <p>
-                                I’m happiest when I’m figuring out how things work—and how to make them work better.
-                                Sometimes that means designing an API. Sometimes it means following a trace across
-                                microservices to find the one thing slowing everything down.
+                                I’m a Software Engineer based in Atlanta, building payroll
+                                and platform solutions at{" "}
+                                <span className="font-semibold text-foreground">TriNet</span>.
+                                My work connects React interfaces, Python services, and
+                                distributed systems supporting 1,858 small and midsize
+                                businesses.
                             </p>
+
                             <p>
-                                I’m a Software Engineer based in Atlanta with a Master’s in Computer Science from California State University, Long Beach.
-                                At TriNet, I help build the systems behind a payroll platform serving 1,858 small and midsize businesses.
-                                My toolkit includes Python, Django, React, gRPC, Kafka, and AWS.
+                                I enjoy the engineering behind the experience: designing APIs,
+                                connecting services with gRPC and Kafka, and following traces
+                                to uncover problems. My observability work helped reduce
+                                incident resolution time by{" "}
+                                <span className="font-semibold text-foreground">35%</span>.
                             </p>
+
                             <p>
-                                I care about what happens after the code ships: how a service scales, how quickly a failure gets diagnosed,
-                                and how easily another engineer can build on it. My observability work helped reduce incident resolution time by 35%
-                                the kind of practical impact that keeps me excited about engineering.
-                            </p>
-                            <p>
-                                Beyond platform engineering, I enjoy exploring AI and machine learning,
-                                from forecasting sales to turning invoices into searchable data.
-                                Give me a tricky problem, room to experiment, and something useful to build, and I’m in.
+                                I care about what happens after code ships—how it scales,
+                                how it recovers, and how easily another engineer can build
+                                on it. That’s what makes a good solution exciting to me.
                             </p>
                         </div>
                     </motion.div>
 
-                    {/* Education Timeline */}
-                    <motion.div
-                        initial={{ opacity: 0, x: 30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                    {/* Education Card */}
+                    <motion.aside
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
+                        className="lg:col-span-2 bg-card border border-border rounded-2xl p-6 md:p-7"
                     >
-                        <h3 className="text-2xl font-bold text-foreground mb-6">
+                        <h3 className="flex items-center gap-3 text-xl font-semibold text-foreground mb-6">
+                            <GraduationCap size={22} className="text-accent shrink-0" />
                             Education
                         </h3>
+
                         <div className="space-y-6">
-                            {education.map((edu, index) => (
-                                <motion.div
+                            {education.map((edu) => (
+                                <div
                                     key={edu.degree}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: index * 0.1 }}
-                                    className="relative pl-8 border-l-2 border-accent"
+                                    className="border-l-2 border-accent/40 pl-4"
                                 >
-                                    <div className="absolute -left-3 top-0 w-6 h-6 bg-accent rounded-full flex items-center justify-center">
-                                        <GraduationCap size={14} className="text-accent-foreground" />
-                                    </div>
-                                    <h4 className="text-lg font-semibold text-foreground">
+                                    <h4 className="text-base font-semibold text-foreground leading-snug">
                                         {edu.degree}
                                     </h4>
-                                    <p className="text-muted-foreground">{edu.institution}</p>
-                                    <div className="flex items-center gap-4 mt-2 text-sm">
-                                        <span className="flex items-center gap-1 text-accent">
-                                            <Calendar size={14} />
+
+                                    <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
+                                        {edu.institution}
+                                    </p>
+
+                                    <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mt-3 text-xs">
+                                        <span className="inline-flex items-center gap-1.5 text-accent">
+                                            <Calendar size={13} />
                                             {edu.period}
                                         </span>
-                                        <span className="text-muted-foreground">{edu.gpa}</span>
+
+                                        <span className="text-muted-foreground">
+                                            {edu.gpa}
+                                        </span>
                                     </div>
-                                </motion.div>
+                                </div>
                             ))}
                         </div>
-                    </motion.div>
+                    </motion.aside>
                 </div>
 
                 {/* Skills Grid */}
