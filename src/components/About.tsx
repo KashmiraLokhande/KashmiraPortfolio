@@ -101,22 +101,24 @@ export default function About() {
                         </h3>
                         <div className="space-y-4 text-muted-foreground leading-relaxed">
                             <p>
-                                I'm a dedicated Full Stack Developer with a Master's degree in Computer
-                                Science from California State University, Long Beach. My journey in tech
-                                is driven by a genuine passion for creating innovative solutions that
-                                solve real-world problems.
+                                I’m happiest when I’m figuring out how things work—and how to make them work better.
+                                Sometimes that means designing an API. Sometimes it means following a trace across
+                                microservices to find the one thing slowing everything down.
                             </p>
                             <p>
-                                With hands-on experience in both frontend and backend development,
-                                I specialize in building scalable web applications, designing efficient
-                                APIs, and integrating machine learning capabilities into modern software
-                                systems.
+                                I’m a Software Engineer based in Atlanta with a Master’s in Computer Science from California State University, Long Beach.
+                                At TriNet, I help build the systems behind a payroll platform serving 1,858 small and midsize businesses.
+                                My toolkit includes Python, Django, React, gRPC, Kafka, and AWS.
                             </p>
                             <p>
-                                I believe in writing clean, maintainable code and following best practices
-                                to deliver high-quality products. Whether it's optimizing a complex payroll
-                                system or developing an OCR solution with 92% accuracy, I'm committed to
-                                excellence in every project I undertake.
+                                I care about what happens after the code ships: how a service scales, how quickly a failure gets diagnosed,
+                                and how easily another engineer can build on it. My observability work helped reduce incident resolution time by 35%
+                                the kind of practical impact that keeps me excited about engineering.
+                            </p>
+                            <p>
+                                Beyond platform engineering, I enjoy exploring AI and machine learning,
+                                from forecasting sales to turning invoices into searchable data.
+                                Give me a tricky problem, room to experiment, and something useful to build, and I’m in.
                             </p>
                         </div>
                     </motion.div>

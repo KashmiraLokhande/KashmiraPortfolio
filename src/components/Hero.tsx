@@ -59,16 +59,30 @@ export default function Hero() {
                             Software Engineer
                         </motion.p>
 
-                        <motion.p
+                        <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.5 }}
-                            className="text-primary-foreground/60 max-w-md mb-8 leading-relaxed"
+                            className="max-w-lg mb-8 space-y-4 leading-relaxed"
                         >
-                            Solving complex problems with innovative web and ML solutions.
-                            Passionate about creating scalable, high-performance applications
-                            that make a real impact.
-                        </motion.p>
+                            <p className="text-lg font-medium text-primary-foreground/90">
+                                Curious by nature. An engineer by mindset.
+                            </p>
+
+                            <p className="text-primary-foreground/75">
+                                I turn complex problems into software that’s simple to use
+                                and built to scale. From React interfaces to Python services
+                                and event-driven systems, I connect the pieces that make
+                                products work.
+                            </p>
+
+                            <p className="text-primary-foreground/75">
+                                Currently building payroll and platform solutions at{" "}
+                                <span className="font-semibold text-primary-foreground">
+                                    TriNet.
+                                </span>
+                            </p>
+                        </motion.div>
 
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
